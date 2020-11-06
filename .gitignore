@@ -8,7 +8,7 @@
 *.pyc
 __pycache__/
 local_settings.py
-db.sqlite3
+#db.sqlite3
 db.sqlite3-journal
 media
 
@@ -157,5 +157,4 @@ dmypy.json
 
 calorie_calculator_env
 .vscode
-0001_initial.py
 desktop.ini
