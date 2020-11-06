@@ -1,0 +1,26 @@
+{% extends 'main.html' %} {% load static%} {% block content %}
+<head>
+  <style>
+    form {
+      border: 1px solid black;
+      margin: auto;
+      padding: 40px;
+    }
+  </style>
+</head>
+<form action="" method="POST">
+  {% csrf_token %}
+  {{form.name.label}}: {{form.name}} <br><br>
+  {{form.carbohydrate.label}}: {{form.carbohydrate}}<br><br>
+  {{form.fats.label}}: {{form.fats}}<br><br>
+  {{form.protein.label}}: {{form.protein}}<br><br>
+  {{form.calorie.label}}: {{form.calorie}}<br><br>
+  <label > Catogary: </label>
+   <input type="text" value="{{catogary}}" readonly><br>
+  {% with catogary  as form.category.value  %}
+    
+  <input type="submit" class="btn btn-success" value="submit" />
+  {% endwith %}
+</form>
+
+{% endblock %}

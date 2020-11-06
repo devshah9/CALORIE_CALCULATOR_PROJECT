@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+      <center><h6>When you  usually eat this item ?</h6> </center>
+    <section class="text-gray-700 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <h2
+              class="text-gray-900 title-font text-lg font-medium"
+              style="text-align: center"
+            >
+              Dinner
+            </h2>
+            <a
+              href="/createfooditem/dinner"
+              class="block relative h-48 rounded overflow-hidden"
+            >
+              <img alt="ecommerce" class="object-cover object-center w-full
+              h-full block" src={% static 'night.jpg' %}>
+            </a>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <h2
+              class="text-gray-900 title-font text-lg font-medium"
+              style="text-align: center"
+            >
+              Breakfast
+            </h2>
+            <a
+              href="/createfooditem/breakfast"
+              class="block relative h-48 rounded overflow-hidden"
+            >
+              <img alt="ecommerce" class="object-cover object-center w-full
+              h-full block" src={% static 'day.jpg' %}>
+            </a>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <h2
+              class="text-gray-900 title-font text-lg font-medium"
+              style="text-align: center"
+            >
+              Snacks
+            </h2>
+            <a
+              href="/createfooditem/snacks"
+              class="block relative h-48 rounded overflow-hidden"
+            >
+              <img alt="ecommerce" class="object-cover object-center w-full
+              h-full block" src={% static 'images.jpg' %}>
+            </a>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <h2
+              class="text-gray-900 title-font text-lg font-medium"
+              style="text-align: center"
+            >
+              Lunch
+            </h2>
+            <a
+              href="/createfooditem/lunch"
+              class="block relative h-48 rounded overflow-hidden"
+            >
+              <img alt="ecommerce" class="object-cover object-center w-full
+              h-full block" src={% static 'afternoon.jpg' %}>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

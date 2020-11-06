@@ -1,0 +1,8 @@
+
+
+
+
+
+Uncompleted work:
+1. make a user get to add a food item and at his/her convinent time.
+2. Remove customer models from models and create a name field in User model and use name insted of customer field.

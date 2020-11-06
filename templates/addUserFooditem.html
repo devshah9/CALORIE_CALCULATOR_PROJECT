@@ -1,0 +1,33 @@
+{% extends 'main.html' %}
+{% load static%}
+{% block content %}
+<head>
+    <style>
+        form{
+            border:1px solid black;
+            margin:auto;
+            padding: 40px;
+        }
+    </style>
+</head>
+<form action="" method="POST">
+    {% csrf_token %}
+    <div style="text-align:center">
+    <h1> Hey {{ request.user}} add a food item which you have consume throught the day</h1>
+    <br>
+ 
+    {% for food in fooditems %}
+         <input type="radio"name='s' id='{{for.loopcounter0}}' value='{{food}}'>
+  <label for='{{for.loopcounter0}}'> {{food}} </label><br>
+    {% endfor %}
+    
+    
+    <!--{{form.fooditem}}-->
+    <br>
+    
+    <input type="submit" class="btn btn-success" value="submit">
+    </div>
+</form>
+<div style="text-align:center">
+    <a  href={% url 'createfooditem' %}><input type="submit" class="btn btn-success" value="create new food item "></a></div>
+{% endblock %}
